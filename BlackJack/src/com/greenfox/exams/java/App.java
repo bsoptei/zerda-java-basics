@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
         JFrame display = new JFrame();
         display.setTitle("TripleT");
-        display.setSize(600, 400);
+        display.setSize(300, 400);
         display.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         display.setLocationRelativeTo(null);
         display.setResizable(false);

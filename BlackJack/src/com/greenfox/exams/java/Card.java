@@ -5,9 +5,14 @@ package com.greenfox.exams.java;
  */
 public class Card {
     public String color;
-    public String value;
+    public Integer value;
+
+    public Card(String color, Integer value) {
+        this.color = color;
+        this.value = value;
+    }
 
     public String getValue(){
-        return value;
+        return String.format("%s %d", color, value);
     }
 }
