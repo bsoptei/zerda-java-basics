@@ -106,12 +106,15 @@ class TestApple {
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
+First, the methods should be declared as static, because they are not called for an instance of the Apple class.
+
+
 The testAdd() is passing for five for this specific case, since it returns five in every case.
 But when tested with different arguments, the sum of which is not 5, it will fail.
 It will pass if it is modified to actually add the two arguments.
 
 ```java
-  public int add(int a, int b) {
+  public static int add(int a, int b) {
     return a + b;
   }
 ```
