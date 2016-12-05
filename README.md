@@ -141,11 +141,11 @@ Abstract classes are useful in the following cases:
 - it is required to perform a specific task
 
 Parts:
-modifier (public, protected, no-modifier, private)
-return type ("void" if it not returns a value, value type if it does)
-name of the method
-parameter list ()
-body (here you can add your statements)
+- modifier (public, protected, no-modifier, private)
+- return type ("void" if it not returns a value, value type if it does)
+- name of the method
+- parameter list ()
+- body (here you can add your statements)
 
 
 ### What is the constructor? When it is used? [2p]
