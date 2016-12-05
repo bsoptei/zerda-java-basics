@@ -107,7 +107,16 @@ Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
 First, the methods should be declared as static, because they are not called for an instance of the Apple class.
+The other solution is to create Apple objects.
 
+```java
+@Before
+public void testAppleSetup(){
+Apple testApple = new Apple();
+}
+```
+
+And call the methods for the testApple.
 
 The testAdd() is passing for five for this specific case, since it returns five in every case.
 But when tested with different arguments, the sum of which is not 5, it will fail.
