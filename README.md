@@ -159,6 +159,11 @@ Parts:
 - parameter list ()
 - body (here you can add your statements)
 
+```java
+[modifier] [return type] [name of the method]([parameter list]) {
+	method body
+}
+```
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
