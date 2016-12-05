@@ -22,8 +22,8 @@ public class BlackJack extends JPanel {
         createElements();
         addButtonActionListener();
         addElementsToPanel();
-        this.house = new Player();
-        this.user = new Player();
+        this.house = new Player("Player");
+        this.user = new Player("House");
         this.deck = new Deck();
     }
 
@@ -34,7 +34,7 @@ public class BlackJack extends JPanel {
         userPlayed = new JLabel("User played:");
     }
 
-    public void addButtonActionListener(){
+    public void addButtonActionListener() {
         ListenForButton buttonListener = new ListenForButton();
         reset.addActionListener(buttonListener);
         drawCard.addActionListener(buttonListener);
@@ -46,6 +46,7 @@ public class BlackJack extends JPanel {
         this.add(reset);
         this.add(drawCard);
     }
+
     public class ListenForButton implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
@@ -54,7 +55,7 @@ public class BlackJack extends JPanel {
                 user.played = new ArrayList<>();
                 house.played = new ArrayList<>();
             } else {
-                if (!(deck.draw() == null)) {
+                if (!deck.cards.isEmpty()) {
                     user.add(deck.draw());
                     if (house.sum() < 17) {
                         house.add(deck.draw());
@@ -67,6 +68,6 @@ public class BlackJack extends JPanel {
 
     private void update() {
         housePlayed.setText("House played: " + house.showCards());
-       userPlayed.setText("User played: " + user.showCards());
+        userPlayed.setText("User played: " + user.showCards());
     }
 }

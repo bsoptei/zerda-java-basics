@@ -10,7 +10,6 @@ public class Card {
     public Card(String color, Integer value) {
         this.color = color;
         this.value = value;
-        System.out.println("created card" + color + value);
     }
 
     public String getValue(){

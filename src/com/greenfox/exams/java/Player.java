@@ -10,6 +10,10 @@ public class Player {
     public String name;
     public ArrayList<Card> played = new ArrayList<>();
 
+    public Player(String name) {
+        this.name = name;
+    }
+
     public int sum() {
         Integer sum = 0;
         for (Card card : played) {
