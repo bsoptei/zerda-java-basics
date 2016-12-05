@@ -14,7 +14,6 @@ public class App {
         display.setLocationRelativeTo(null);
         display.add(new BlackJack());
         display.setVisible(true);
-
     }
 
 }

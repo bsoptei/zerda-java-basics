@@ -66,7 +66,7 @@ public class BlackJack extends JPanel {
         }
     }
 
-    private void update() {
+    public void update() {
         housePlayed.setText("House played: " + house.showCards());
         userPlayed.setText("User played: " + user.showCards());
     }
