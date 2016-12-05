@@ -1,4 +1,4 @@
-# EXAM: Java Basics
+﻿# EXAM: Java Basics
 
 ### Getting Started
  - Fork this repository under your own account
@@ -106,7 +106,23 @@ class TestApple {
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
+The testAdd() is passing for five for this specific case, since it returns five in every case.
+But when tested with different arguments, the sum of which is not 5, it will fail.
+It will pass if it is modified to actually add the two arguments.
 
+```java
+  public int add(int a, int b) {
+    return a + b;
+  }
+```
+Like the add() function, this will also pass for this specific case, but if a> b and a< c, it will not work as it should.
+It can be fixed (just a quick fix) like this:
+```java
+public static int max_of_three(int a, int b, int c) {
+       return Math.max(Math.max(a, b), c);
+    }
+
+```
 
 ## 4. Question time! (~20 mins) [6p]
 
