@@ -115,7 +115,7 @@ It will pass if it is modified to actually add the two arguments.
     return a + b;
   }
 ```
-Like the add() function, this will also pass for this specific case, but if a> b and a< c, it will not work as it should.
+Like the add() function, testMax will also pass for this specific case, but if a> b and a< c, int max_of_three will not work as expected.
 It can be fixed (just a quick fix) like this:
 ```java
 public static int max_of_three(int a, int b, int c) {
@@ -128,9 +128,29 @@ public static int max_of_three(int a, int b, int c) {
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
+Abstract classes are useful in the following cases:
+- if the classes that extend the parent class have numerous common fields and/or methods,
+- if one would like to share code among classes that are closely related,
+- if one would to declare non-static and/or non-final fields
+
+
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
+- a method is a collection of statements
+- it is required to perform a specific task
+
+Parts:
+modifier (public, protected, no-modifier, private)
+return type ("void" if it not returns a value, value type if it does)
+name of the method
+parameter list ()
+body (here you can add your statements)
+
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
+- a constructor is a special type of method
+- it initializes the object
+- it provides data for the object
+- it is called when an object is created
